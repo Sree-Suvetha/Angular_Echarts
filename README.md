@@ -1,59 +1,37 @@
 # SocialMediaUsers
+This Angular project visualizes the growth of Instagram and YouTube users over the years with the integration of ECharts.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
+### Basic Commands
+1. To create: ng new SocialMediaUsers
+2. Installation: npm install ngx-echarts echarts
+3. Imports: Proper import statements in the code
+4. Create components: ng g c components/overview, ng g c components/visuals
+5. Create Models: ng g i models/UserData
+6. Create Services: ng g s services/UserData
+7. To Run: ng serve
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+### Data Source
+- Static data is provided within user-data.service.ts for instagram, youtube and combined yearly values
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Components
+##### 1. Overview
+- Displays title and a brief description about the project
+##### 2. Visuals
+- Displays the charts created that shows the no of users on social media (Instagram, Youtube)
+- It has 3 charts -> Instagram users, Youtube Users and a Comparison chart to show the average increase of users per year
+- The comparison chart can be viewed as a bar, line or pie chart
+- Tooltip, styles etc., has been added through the Echarts Option
+  
+### Features
+- Displays Instagram and YouTube user data from 2018 to 2024
+- Comparison chart showing average yearly increase in users
+- Dropdown to switch between Bar, Line, and Pie chart types
+- Interactive tooltips and stylized chart rendering using ECharts
+- Modular service to manage and fetch user data
 
-```bash
-ng generate component component-name
-```
+### Chart types Supported
+- Bar
+- Line
+- Pie
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
