@@ -8,8 +8,8 @@ This Angular project visualizes the growth of Instagram and YouTube users over t
 4. Create components: ng g c components/overview, ng g c components/visuals
 5. Create Models: ng g i models/UserData
 6. Create Services: ng g s services/UserData
-7. To Run: ng serve
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+7. To Run: ng serve 
+- Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ### Data Source
 - Static data is provided within user-data.service.ts for instagram, youtube and combined yearly values
@@ -21,7 +21,6 @@ Once the server is running, open your browser and navigate to `http://localhost:
 - Displays the charts created that shows the no of users on social media (Instagram, Youtube)
 - It has 3 charts -> Instagram users, Youtube Users and a Comparison chart to show the average increase of users per year
 - The comparison chart can be viewed as a bar, line or pie chart
-- Tooltip, styles etc., has been added through the Echarts Option
   
 ### Features
 - Displays Instagram and YouTube user data from 2018 to 2024
