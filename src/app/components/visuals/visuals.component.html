@@ -1,0 +1,15 @@
+<body>
+<div echarts [options]="i_option" style="height: 400px;"></div>
+<div echarts [options]="y_option" style="height: 400px;"></div>
+<div class="chart-container">
+    <!-- Dropdown to select chart type -->
+    <label for="chartType">Select Chart Type: </label>
+    <select id="chartType" (change)="onChartTypeChange($event)">
+      <option value="bar">Bar</option>
+      <option value="line">Line</option>
+      <option value="pie">Pie</option>
+    </select>
+  
+    <div echarts [options]="comparison_option" style="height: 400px; width:600px; margin-left: 300px;"></div>
+</div>
+</body>
